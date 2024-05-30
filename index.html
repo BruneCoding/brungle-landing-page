@@ -1,0 +1,566 @@
+<style>
+  * {
+  margin: 0;
+}
+
+.card h3 {
+  font-size: 15px;
+  margin-top: -7.5px;
+}
+
+#one {
+ height: 300px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#two {
+  height: 620px;
+  width: calc(63% - 10px);
+  flex: 1 1 calc(66.666% -  10px);
+  position: absolute;
+  top: 40px;
+  left: 325px;
+}
+
+#three {
+  height: 150px;
+  width: 300px;
+}
+
+
+
+.card h2 {
+  font-size: 69px;
+  font-family:"Lexend Deca";
+  color: #FFA809;
+}
+
+.why {
+  width: 100%;
+}
+
+.feature {
+  background: #265728;
+  width: calc(100% - 50px);
+  max-width: 100%;
+  padding: 25px;
+  height: auto;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+}
+
+.feature h1 {
+  color: white;
+  font-size: 25px;
+  font-family: "Helvetica", cursive;
+  font-weight: bold;
+  margin: 50px;
+  animation: sideScroll 10s infinite;
+}
+
+#clickAway {
+  background: -webkit-linear-gradient(90deg, #ffecd2 0%, #fcb69f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Brush Script", cursive;
+  font-weight: 1400;
+  font-size: 30px;
+}
+.bento-vertical {
+  display: flex;
+  flex-direction: column; 
+  gap: 10px; 
+  min-height: 90%; 
+  height: auto; 
+  max-height: 92%; 
+  margin-left: -10px;
+  margin-bottom: 10px;
+}
+
+.bento {
+  display: flex;
+  flex-direction: row;
+            flex-wrap: wrap;
+            gap: 10px;
+            width: 92%;
+}
+
+.card {
+            background-color: #fe6666;
+            padding: 20px;
+  color: #980000;
+            box-sizing: border-box;
+            text-align: center;
+            border: 8px solid #fe6666;
+            border-radius: 8px;
+}
+
+.why {
+  position: relative;
+}
+
+.why h1 {
+  color: #fea702;
+  font-weight: 970;
+  font-size: 2rem;
+  margin-left: 25px;
+  font-family: "Helvetica", serif;
+  margin-top: 15px;
+}
+
+.why b {
+  font-weight: 1000;
+  font-size: 2.2rem;
+  font-family: monospace;
+}
+
+.get {
+  z-index: 9;
+  min-width: 250px;
+  ma-width: 350px;
+  width: auto;
+  max-height: 67.5px;
+  padding: 15px 5px;
+  border-radius: 2rem;
+  font-size: 1.35rem;
+  font-family: monospace;
+  color: white;
+  background: rgba(0,212,255,1);
+  border: 5px solid white;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+
+.get:hover {
+  background: #00ff2e;
+}
+
+header {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: linear-gradient(0deg, rgba(254,165,0,1) 0%, #fdd02d 100%);
+}
+
+.pricing {
+  background: purple;
+  color: white;
+  height: auto;
+  width: 100vw;
+  margin-top: 100px;
+  font-family: "Helvetica";
+  border-radius: 75px 75px 0px 0px;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pricing-container {
+  padding: 25px;
+  min-width: calc(100vh - 50px);
+  background: purple;
+  height: auto;
+}
+
+.pricing h1{
+  font-size: 50px;
+}
+
+.pricing h3 {
+  font-size: 15px;
+  margin-top: -2.5px;
+  color: #e1e1e1;
+}
+
+.pricing-plans {
+  display: flex;
+  flex-direction: row;
+  min-width: calc(100vw - 100px);
+  max-width: calc(100vw - 75px);
+  
+  height: auto;
+  padding: 20px;
+  backdrop-filter: blur(16px);
+  background: linear-gradient(to bottom right, rgba(177,177,0,0.5),rgba(0,177,88,0.75));
+  border: 1px solid white;
+  justify-content: center;
+  gap: 20px;
+  margin: 0 auto;
+  margin-top: 35px;
+  border-radius: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+hr {
+  margin-top: 37.5px;
+  margin-bottom: 37.5px;
+}
+
+.plans {
+  border-radius: 8px;
+            padding: 20px;
+            flex: 1;
+            margin: 10px;
+  
+  background: rgba(1, 212, 255, 0.05);
+}
+
+.tick-list li::before {
+            content: '\2713'; /* Unicode for tick symbol */
+            color: #00FF00; /* Green color for the tick */
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .most-popular {
+            color: #00FF00;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+#dry {
+  color:#b9b9b9;
+}
+
+#dry::before {
+  content: '\2717';
+  color: rgba(139,139,139,1);
+}
+
+#ugh {
+  color: #ffdc40;
+  font-weight: 1000;
+}
+.tick-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .tick-list li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+.plans h3 {
+            margin-top: 0;
+            font-size: 24px;
+        }
+
+        .plans .price {
+            font-size: 36px;
+            margin: 10px 0;
+        }
+
+        .plans .price span {
+            font-size: 18px;
+            color: #aaa;
+        }
+
+        .plans .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: white;
+            color: black;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+          transition: all 0.3s ease-in-out;
+        }
+
+.btn:hover {
+  background: rgba(2,254,41,0.5);
+  color: white;
+  border: 2px solid white;
+}
+
+        .plans .btn-secondary {
+            background-color: transparent;
+            color: white;
+            border: 1px solid white;
+            margin-top: 10px;
+          transition: all 0.3s ease-in-out;
+        }
+
+.btn-secondary:Hover {
+  background: white;
+  color: #577a86;
+  border-radius: 32px;
+  border: #577a86;
+}
+
+        .plans .features h4 {
+            margin-bottom: 10px;
+        }
+
+.pricing:hover {
+  transform: translateY(-2.5vh) scale(1.005);
+}
+
+header h1 {
+  margin-top: 125px;
+  color: white;
+  font-family: "Helvetica", cursive;
+  margin-left: 150px;
+  margin-right: 150px;
+  text-align: center;
+  font-size: 5rem;
+}
+
+.background-ball {
+  border-radius: 50%;
+  width: 225px;
+  height: 225px;
+  position: absolute;
+}
+
+#ballOne {
+  background: radial-gradient(#d4ff01,#eaff84);
+  right: 82px;
+  top: 102px;
+  filter: blur(15px);
+}
+
+#ballTwo {
+  background: radial-gradient(#84eaff,#a8c4ff);
+  filter: blur(44px);
+  top: 195px;
+  left: 220px;
+  width: 275px;
+  height: 275px;
+}
+
+header h3 {
+  color: #efefef;
+  z-index: 90;
+  font-family: "Helvetica", cursive;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 45px;
+  margin-top: -17.5px;
+}
+
+#yo{
+  background: -webkit-linear-gradient(left, #a600ff, #1400ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Brush Script", cursive;
+  font-weight: bold;
+  font-size: 5rem;
+}
+
+body {
+  background: red;
+  height: 400vh;
+}
+
+.top-bar {
+  width: 100vw;
+  height: 12.5vh;
+  background: rgba(243,231,33,0.5);
+  backdrop-filter: blur(4px);
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  z-index: 10;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.top-bar h1 {
+  color: #f5f5f5;
+  font-family: "Helvetica", cursive;
+  transition: all 0.05s ease-in-out;
+}
+
+.top-bar h4 {
+  color: #f8f8f8;
+  font-family: "Helvetica", cursive;
+  transition: all 0.05s ease-in-out;
+}
+.top-bar h1:hover, .top-bar h4:hover {
+  color: white;
+  transform: scale(1.0005) rotate(0.5deg);
+}
+
+column h1:hover + column h4 {
+  color: white;
+}
+
+.top-bar h1 {
+  font-size: 22px
+}
+
+.top-bar h4 {
+  font-size: 10px;
+}
+
+column {
+  display: flex;
+  flex-direction:column;
+  text-align: center;
+}
+
+#whats {
+  text-align: left;
+}
+
+
+
+#patternId {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+
+h1 {
+  z-index: 9;
+}
+
+h4 {
+  z-index: 9;
+}
+
+@keyframes sideScroll {
+  from {
+    transform: rotate(0deg);
+  }
+  
+  25% {
+    transform: rotate(-0.5deg);
+  }
+  50% {
+    transform: rotate(0.75deg);
+  }
+  
+  75% {
+    transform: rotate(-0.5deg);
+  }
+  
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+#first {
+  animation: sideScroll 2s infinite ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#clickAway:hover {
+  transform: rotate(2deg);
+}
+
+body {
+  overflowX: hidden;
+  width: 100%;
+  height: auto;
+}
+</style>
+<html>
+  <script src="https://kit.fontawesome.com/cd9d6500a7.js" crossorigin="anonymous"></script>
+<div class="top-bar">
+  <h1> Why Brungle? </h1>
+  <h1> Features </h1>
+  <column>
+  <h1> Pricing <h4>( PLANS )</h4></h1>
+  </column>
+  <h1> FAQ </h1>
+</div>
+<div class="background-ball" id="ballOne"></div>
+<div class="background-ball" id="ballTwo"></div>
+<header>
+  <h1> The Browser for the <span id="yo"> FLOYD </span></h1>
+  <h3> ... made by the FLOYD ... </h3>
+<button class="get"><a>Get Brungle</a><i class="fa-solid fa-download fa-sm" style="color: #ffffff;"></i></button>
+</header>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fea702" fill-opacity="1" d="M0,224L26.7,197.3C53.3,171,107,117,160,96C213.3,75,267,85,320,80C373.3,75,427,53,480,42.7C533.3,32,587,32,640,74.7C693.3,117,747,203,800,224C853.3,245,907,203,960,181.3C1013.3,160,1067,160,1120,165.3C1173.3,171,1227,181,1280,202.7C1333.3,224,1387,256,1413,272L1440,288L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"></path></svg>
+<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg' style="display: none"><defs><pattern id='a' patternUnits='userSpaceOnUse' width='100' height='100' patternTransform='scale(2) rotate(30)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(33, 90%, 65%, 0)'/><path d='M100.16 24.75a2.93 2.93 0 11.04 5.86 2.93 2.93 0 01-2.95-2.91 2.92 2.92 0 012.9-2.95zm-100 0a2.93 2.93 0 11.04 5.86 2.93 2.93 0 01-2.95-2.91 2.92 2.92 0 012.9-2.95zm9.57 53.18c1.6 0 2.9 1.3 2.9 2.9a2.95 2.95 0 01-2.95 2.96 2.9 2.9 0 01-2.9-2.9 2.95 2.95 0 012.95-2.96zm58.57-2.51a2.93 2.93 0 11.04 5.86 2.93 2.93 0 11-.04-5.86zM49.45 4.4a2.93 2.93 0 11.04 5.86 2.93 2.93 0 01-.04-5.86zM21.66 49.6l2.95 2.91-2.9 2.95-2.95-2.9zm43.55-12.85s2.9 1.3 2.9 2.9v.05c0 1.6-1.3 2.9-2.9 2.9h-.04c-1.6 0-2.9-2.9-2.9-2.9z'  stroke-width='1' stroke='none' fill='hsla(54, 100%, 62%, 0.47)'/><path d='M89.93 57.48a1.08 1.08 0 01.39-1.38c2.44-1.53 5.04-1.81 7.15-.8 2.1 1.03 3.47 3.26 3.77 6.13.22 2.14 1.14 3.71 2.58 4.42 1.44.7 3.24.45 5.07-.69a1.07 1.07 0 011.13 1.8c-2.44 1.54-5.04 1.83-7.14.81-2.1-1.02-3.48-3.25-3.77-6.12-.23-2.15-1.15-3.72-2.59-4.42-1.44-.7-3.24-.46-5.07.68-.5.32-1.16.16-1.47-.33l-.05-.1zm10.06 31.11a.87.87 0 011.07.46c.99 2.14.95 4.28-.1 5.88-1.05 1.6-3 2.48-5.36 2.42-1.76-.04-3.13.54-3.85 1.63-.72 1.1-.71 2.59.03 4.18a.87.87 0 11-1.59.73c-.99-2.13-.95-4.27.1-5.87 1.05-1.6 3-2.48 5.36-2.42 1.76.04 3.13-.54 3.85-1.63.72-1.1.71-2.59-.03-4.18a.87.87 0 01.52-1.2zm0-100a.87.87 0 011.07.46c.99 2.14.95 4.28-.1 5.88-1.05 1.6-3 2.48-5.36 2.42-1.76-.04-3.13.54-3.85 1.63-.72 1.1-.71 2.59.03 4.18a.87.87 0 11-1.59.73c-.99-2.13-.95-4.27.1-5.87 1.05-1.6 3-2.48 5.36-2.42 1.76.04 3.13-.54 3.85-1.63.72-1.1.71-2.59-.03-4.18a.87.87 0 01.52-1.2zM9.44 9.9c.15-.3.54-.39.9-.24 1.88.82 3.16 2.12 3.53 3.58.38 1.47-.21 2.93-1.6 4.02-1.04.8-1.47 1.81-1.22 2.81.26 1 1.17 1.9 2.57 2.5.39.18.6.58.47.9-.13.34-.55.47-.93.3-1.88-.82-3.16-2.12-3.54-3.58-.37-1.46.22-2.93 1.6-4.01 1.05-.81 1.48-1.82 1.23-2.82-.26-1-1.17-1.89-2.58-2.5-.38-.17-.59-.57-.46-.9l.03-.07zm-19.51 47.59a1.08 1.08 0 01.39-1.38c2.44-1.53 5.04-1.81 7.15-.8 2.1 1.03 3.47 3.26 3.77 6.13.22 2.14 1.14 3.71 2.58 4.42 1.44.7 3.24.45 5.07-.69a1.07 1.07 0 011.13 1.8c-2.44 1.54-5.04 1.83-7.14.81C.78 66.75-.6 64.52-.9 61.65c-.23-2.15-1.15-3.72-2.59-4.42-1.44-.7-3.24-.46-5.07.68-.5.32-1.16.16-1.47-.33l-.05-.1zM-.01 88.59a.87.87 0 011.07.46c.99 2.14.95 4.28-.1 5.88-1.05 1.6-3 2.48-5.36 2.42-1.76-.04-3.13.54-3.85 1.63-.72 1.1-.71 2.59.03 4.18a.87.87 0 11-1.59.73c-.99-2.13-.95-4.27.1-5.87 1.05-1.6 3-2.48 5.36-2.42 1.76.04 3.13-.54 3.85-1.63.72-1.1.71-2.59-.03-4.18a.87.87 0 01.52-1.2zm43.92-4.85c-.24-.48-.1-1.08.36-1.38 2.41-1.59 5-1.93 7.13-.96s3.55 3.17 3.92 6.03c.27 2.14 1.23 3.7 2.68 4.36 1.46.67 3.25.38 5.05-.8a1.07 1.07 0 011.48.3c.32.5.19 1.16-.3 1.48-2.4 1.59-5 1.94-7.13.96-2.12-.97-3.55-3.17-3.91-6.03-.28-2.14-1.23-3.69-2.69-4.36-1.46-.67-3.25-.38-5.05.8-.49.32-1.16.2-1.48-.3l-.06-.1zM41 45.67c-.47.25-1.07.1-1.38-.35-1.61-2.39-2-4.98-1.05-7.11.94-2.14 3.13-3.6 5.98-4 2.14-.3 3.67-1.27 4.32-2.73.65-1.47.34-3.26-.87-5.05-.33-.49-.2-1.15.28-1.48.5-.33 1.15-.2 1.5.28 1.6 2.39 2 4.98 1.04 7.11-.94 2.14-3.12 3.6-5.98 4-2.13.3-3.67 1.27-4.32 2.73-.65 1.47-.34 3.26.87 5.05.33.49.21 1.15-.28 1.49-.04.01-.07.04-.1.06z'  stroke-width='1' stroke='none' fill='hsla(165, 100%, 40%, 0.39)'/><path d='M101 9.76l.75 1.71-9.97 4.34-.74-1.72zM87.35 9.7l-.66 1.75L59.14 1.12l.65-1.76zM41.4-6.21l1.62.93L34.2 10l-1.62-.94zM87.35 109.7l-.66 1.76-27.55-10.35.65-1.75zM50.58 56.03l1.85-.3 1.83 11.32-1.85.3zm-6.22 13.79l-.5 1.8-17-4.66.5-1.8zM41.4 93.79l1.62.93L34.2 110l-1.62-.94zM87.35 9.7l-.66 1.75L59.14 1.12l.65-1.76zm-7.77 42.56l.77 1.76-16.34 7.11-.77-1.75zM1 9.76l.75 1.71-9.96 4.34-.75-1.72zm100 0l.75 1.71-9.97 4.34-.74-1.72zM31.04 27.68l.6 1.86-23.13 7.48-.6-1.86zm48.1 46.45l.73-1.72 10 4.28-.74 1.72zM41.4-6.2l1.62.93L34.2 10l-1.62-.94zM67.54 11.2l1.62.94-7.26 12.57-1.62-.94zM21.22 90.35l-.6-1.4 9.58-4.16.6 1.39zm69.3-49.79l-1.5 1.12L78.5 27.55l1.5-1.12zm-3.17 69.14l-.66 1.76-27.55-10.35.65-1.75zM41.4 93.8l1.62.93L34.2 110l-1.62-.94zM1 9.76l.74 1.71-9.96 4.34-.75-1.72z'  stroke-width='1' stroke='none' fill='hsla(54, 100%, 62%, 0.47)'/></pattern></defs><rect width='800%' height='800%' transform='translate(-190,-144)' fill='url(#a)'/></svg>
+<section class="why">
+  <h1> Why <i>YOU</i> should use <b>BRUNGLE</b>
+    <div class="bento-vertical">
+    <div class="card" id="one">
+      <h2>52%</h2>
+      <h3>More Effeciency</h3>
+    </div>
+        <div class="card" id="three">b</div>
+        <div class="card" id="three">c</div>
+      </div>
+    <div class="card" id="two"><h2>d</h2></div>
+    <div class="card" id="four">e</div>
+    <div class="card" id="five">f</div>
+</section>
+  <section class="feature">
+    <h1 id="first"> Everything <span id="clickAway">YOU</span> Imagine, a <span id="clickAway">CLICK</span> away. </h1>
+  </section>
+<section class="pricing">
+  <div class="pricing-container">
+    <h1> Pricing </h1>
+    <h3> 3 Various PLANS! </h3>
+    </div>
+  <div class="pricing-plans">
+    <div class="plans">
+      <div class="most-popular" id="ugh">RECOMMENDED</div>
+      <h3>FREE</h3>
+            <div class="price">£0.00 <span>GDP per user / per month</span></div>
+            <a href="#" class="btn">Start Now!</a>
+      <hr></hr>
+            <div class="features">
+                <h4 id="whats">What's included</h4>
+                <ul class="tick-list">
+                  <li>Default Timetables</li>
+                  <li>BG Customization Menu</li>
+                  <li>Brungle Shop</li>
+                  <li>Incognito ( 25 Search / day )</li>
+                  <li id="dry">Widgets</li>
+                  <li id="dry">Custom Timetables</li>
+                  <li id="dry">Addons ( extensions )</li>
+                  <li id="dry">AI Summarization</li>
+                </ul>
+            </div>
+    </div>
+    <div class="plans">
+      <div class="most-popular">Most Popular</div>
+            <h3>Premium</h3>
+            <div class="price">£1.00 <span>GDP per user / month</span></div>
+            <a href="#" class="btn">Buy now</a>
+            <a href="#" class="btn btn-secondary">Free Trial</a>
+      <hr></hr>
+            <div class="features">
+                <h4 id="whats">What's included: </h4>
+                <ul class="tick-list">
+                    <li>Default Timetables</li>
+                  <li>BG Customization Menu</li>
+                  <li>Brungle Shop</li>
+                  <li>Incognito ( Infinite Searches )</li>
+                  <li>Widgets</li>
+                  <li>Custom Timetables</li>
+                  <li>Addons ( extensions )</li>
+                  <li>AI Summarization</li>
+                </ul>
+            </div>
+    </div>
+  </div>
+</section>
+</html>
+<script>
+  //nothing here yet... maybe come back ltr cos ill add some button functionality
+</script>
